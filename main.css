@@ -68,3 +68,116 @@
     opacity: 0;
     transition: opacity 0.5s;
 }
+
+/* Style for the language selector button */
+#langBtn {
+    background-color: #f0f0f0;
+    /* Light grey background */
+    color: #333;
+    /* Dark grey text color */
+    padding: 10px 15px;
+    /* Padding for a larger clickable area */
+    font-size: 16px;
+    /* Larger font size for better readability */
+    border: none;
+    /* No border */
+    outline: none;
+    /* Remove outline */
+    width: 100%;
+    /* Full width */
+    text-align: left;
+    /* Align text to the left */
+    border-bottom: 1px solid #ccc;
+    /* A subtle bottom border */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+#langBtn:hover {
+    background-color: #e8e8e8;
+    /* Slightly darker on hover */
+}
+
+#langBtn i {
+    float: right;
+    /* Move the icon to the right */
+    line-height: 20px;
+    /* Align icon vertically */
+}
+
+/* Style for the dropdown menu */
+#lang_acc {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /* Shadow for 3D effect */
+    background-color: #fff;
+    /* White background color */
+    width: 100%;
+    /* Full width */
+}
+
+#lang_acc div {
+    padding: 12px 16px;
+    /* Generous padding for easy click */
+    cursor: pointer;
+    /* Cursor pointer indicates clickable */
+    border-bottom: 1px solid #ddd;
+    /* Separators for clarity */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+}
+
+#lang_acc div:hover {
+    background-color: #f1f1f1;
+    /* Light grey background on hover */
+}
+
+#lang_acc div i {
+    margin-right: 10px;
+    /* Space between icon and text */
+}
+
+#langBtn {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: space-between;
+    /* Space out the child elements */
+    align-items: center;
+    /* Align items vertically */
+    width: 100%;
+    /* Full width to match parent */
+    padding: 10px 20px;
+    /* Padding for aesthetics */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    cursor: pointer;
+    /* Cursor pointer to indicate it's clickable */
+    border: 1px solid #ccc;
+    /* A subtle border */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #f9f9f9;
+    /* Slightly off-white background */
+}
+
+#langBtn .lang-btn-content {
+    display: flex;
+    /* Enable flexbox inside the button */
+    align-items: center;
+    /* Align items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+    width: 100%;
+    /* Take full width to spread out the contents */
+}
+
+#langBtn i {
+    margin: 0 10px;
+    /* Margins around icons for spacing */
+}
+
+#langBtn span {
+    flex-grow: 1;
+    /* Let the text take up extra space */
+    text-align: center;
+    /* Center the text */
+}

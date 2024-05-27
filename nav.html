@@ -6,13 +6,34 @@
         <h2>Kevacoin Team</h2>
     </div>
     <div class="w3-large w3-text-grey w3-padding-16" style="font-weight:bold">
+        <div onclick="accordian_func('lang_acc')" href="javascript:void(0)"
+            class="w3-button w3-block w3-white w3-left-align" id="langBtn">
+            <div class="lang-btn-content">
+                <i class="fas fa-globe-americas"></i> <!-- Globe icon on the left -->
+                <span>Select Language</span> <!-- Text in the center -->
+                <i class="fa fa-caret-down"></i> <!-- Caret icon on the right -->
+            </div>
+        </div>
+
+        <div id="lang_acc" onclick="lang_close()" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <div onclick="loadTranslations('en')"><i class="fas fa-globe-americas"></i> English</div>
+            <div onclick="loadTranslations('es')"><i class="fas fa-globe-americas"></i> Español</div>
+            <div onclick="loadTranslations('zh')"><i class="fas fa-globe-asia"></i> 中文 (Zhōngwén)</div>
+            <div onclick="loadTranslations('ja')"><i class="fas fa-globe-asia"></i> 日本語 (Japanese)</div>
+            <div onclick="loadTranslations('hi')"><i class="fas fa-globe-asia"></i> हिन्दी (Hindi)</div>
+            <div onclick="loadTranslations('ar')"><i class="fas fa-globe-africa"></i> العربية (Arabic)</div>
+            <div onclick="loadTranslations('bn')"><i class="fas fa-globe-asia"></i> বাংলা (Bengali)</div>
+            <div onclick="loadTranslations('pt')"><i class="fas fa-globe-europe"></i> Português</div>
+            <div onclick="loadTranslations('ru')"><i class="fas fa-globe-europe"></i> Русский (Russian)</div>
+        </div>
+
         <a href="/protocol.html" class="w3-bar-item w3-button">Protocol</a>
         <a href="/faq.html" class="w3-bar-item w3-button">FAQ</a>
-        <a onclick="myAccFunc('demoAcc')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align"
-            id="myBtn">
+        <a onclick="accordian_func('soft_acc')" href="javascript:void(0)"
+            class="w3-button w3-block w3-white w3-left-align" id="softBtn">
             Software <i class="fa fa-caret-down"></i>
         </a>
-        <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-show">
+        <div id="soft_acc" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-show">
             <a href="/software/kevacoin_core.html" class="w3-bar-item w3-button">Kevacion Core</a>
             <a href="/software/keva_stratum.html" class="w3-bar-item w3-button">Keva-Stratum</a>
             <a href="/software/electrumx.html" class="w3-bar-item w3-button">ElectrumX</a>
@@ -20,18 +41,17 @@
             <a href="/software/keva_wallet.html" class="w3-bar-item w3-button">KevaWallet</a>
             <a href="/software/cryptonode_nodejs_pool.html" class="w3-bar-item w3-button">Cryptonote-Nodejs-Pool</a>
         </div>
-        <a onclick="myAccFunc('demoAccGuides')" href="javascript:void(0)"
-            class="w3-button w3-block w3-white w3-left-align" id="myBtn2">
+        <!-- <a onclick="accordian_func('guides_acc')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="guidesBtn">
             Guides <i class="fa fa-caret-down"></i>
         </a>
-        <div id="demoAccGuides" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-show">
+        <div id="guides_acc" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-show">
             <a href="/guides/kevacoin_core.html" class="w3-bar-item w3-button">Kevacion Core</a>
             <a href="/guides/keva_stratum.html" class="w3-bar-item w3-button">Keva-Stratum</a>
-            <!-- <a href="/guides/electrumx.html" class="w3-bar-item w3-button">ElectrumX</a> -->
             <a href="/guides/keva_ipfs.html" class="w3-bar-item w3-button">Keva_IPFS</a>
-            <!-- <a href="/guides/keva_wallet.html" class="w3-bar-item w3-button">KevaWallet</a> -->
-            <a href="/guides/cryptonode_nodejs_pool.html" class="w3-bar-item w3-button">Cryptonote-Nodejs-Pool</a>
-        </div>
+            <a href="/guides/cryptonode_nodejs_pool.html" class="w3-bar-item w3-button">Cryptonote-Nodejs-Pool</a> -->
+        <!-- <a href="/guides/electrumx.html" class="w3-bar-item w3-button">ElectrumX</a> -->
+        <!-- <a href="/guides/keva_wallet.html" class="w3-bar-item w3-button">KevaWallet</a> -->
+        <!-- </div> -->
     </div>
 </nav>
 

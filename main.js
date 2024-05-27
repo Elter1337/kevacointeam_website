@@ -8,13 +8,34 @@ function loadHTML(url, elementId) {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadHTML('/nav.html', 'nav-placeholder');
-    //loadHTML('/head.html', 'head-placeholder');
+    loadHTML('/nav.html', 'nav-placeholder', function () {
+        // Initialize dropdown after nav is loaded
+        setupDropdown();
+    });
     loadHTML('/footer.html', 'footer-placeholder');
-
+    // This can be triggered by a language selection event, e.g., user selecting a language from a dropdown
+    loadTranslations('en');
 });
 
-function myAccFunc(section) {
+function setupDropdown() {
+    var selected = document.querySelector('select-selected');
+    var itemsContainer = selected.nextElementSibling;
+
+    if (selected) {
+        selected.addEventListener('click', function () {
+            itemsContainer.classList.toggle('select-hide');
+        });
+    }
+    itemsContainer.querySelectorAll('select-items div').forEach(function (item) {
+        item.addEventListener('click', function () {
+            selected.innerHTML = this.innerHTML; // Update the displayed value
+            selected.setAttribute('data-value', this.getAttribute('data-value')); // Update the stored value
+            itemsContainer.classList.add('select-hide'); // Hide items after selection
+        });
+    });
+};
+
+function accordian_func(section) {
     var x = document.getElementById(section);
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
@@ -32,6 +53,11 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
+};
+
+function lang_close() {
+    var x = document.getElementById("lang_acc");
+    x.className = x.className.replace(" w3-show", "");
 };
 
 var modal = document.getElementById("myModal");
@@ -114,4 +140,36 @@ function showTooltip(element, message) {
         tooltip.style.opacity = 0;
         setTimeout(() => document.body.removeChild(tooltip), 500);
     }, 3000); // Display for 3 seconds
+};
+
+function loadTranslations(language) {
+    fetch(`/translations/${language}.json`)
+        .then(response => response.json())
+        .then(translations => {
+            document.querySelectorAll("[data-translate]").forEach(el => {
+                const key = el.getAttribute("data-translate");
+                el.textContent = translations[key];
+            });
+            // Update the language button to show the current language
+            updateLanguageButton(language);
+        })
+        .catch(error => console.error('Error loading translation file:', error));
+};
+
+function updateLanguageButton(language) {
+    const langMap = {
+        'en': 'English',
+        'es': 'Español',
+        'zh': '中文 (Zhōngwén)',
+        'ja': '日本語 (Japanese)',
+        'hi': 'हिन्दी (Hindi)',
+        'ar': 'العربية (Arabic)',
+        'bn': 'বাংলা (Bengali)',
+        'pt': 'Português',
+        'ru': 'Русский (Russian)'
+    };
+    const languageButton = document.querySelector('#langBtn span');
+    if (languageButton) {
+        languageButton.textContent = langMap[language] || 'Select Language';
+    }
 };
