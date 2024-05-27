@@ -1,3 +1,7 @@
+h5 {
+    word-wrap: break-word;
+}
+
 /* Style the images */
 .imgZoom {
     width: 10%;
