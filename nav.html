@@ -3,14 +3,14 @@
     <div class="w3-container w3-display-container w3-center">
         <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
         <a href="/index.html"><img src="/images/logo.png" height="150px" /></a>
-        <h2>Kevacoin Team</h2>
+        <h2 data-translate="nav-01">Kevacoin Team</h2>
     </div>
     <div class="w3-large w3-text-grey w3-padding-16" style="font-weight:bold">
         <div onclick="accordian_func('lang_acc')" href="javascript:void(0)"
             class="w3-button w3-block w3-white w3-left-align" id="langBtn">
             <div class="lang-btn-content">
                 <i class="fas fa-globe-americas"></i> <!-- Globe icon on the left -->
-                <span>Select Language</span> <!-- Text in the center -->
+                <span data-translate="nav-02">Select Language</span> <!-- Text in the center -->
                 <i class="fa fa-caret-down"></i> <!-- Caret icon on the right -->
             </div>
         </div>
@@ -27,11 +27,11 @@
             <div onclick="loadTranslations('ru')"><i class="fas fa-globe-europe"></i> Русский (Russian)</div>
         </div>
 
-        <a href="/protocol.html" class="w3-bar-item w3-button">Protocol</a>
-        <a href="/faq.html" class="w3-bar-item w3-button">FAQ</a>
+        <a data-translate="nav-03" href="/protocol.html" class="w3-bar-item w3-button">Protocol</a>
+        <a data-translate="nav-04" href="/faq.html" class="w3-bar-item w3-button">FAQ</a>
         <a onclick="accordian_func('soft_acc')" href="javascript:void(0)"
             class="w3-button w3-block w3-white w3-left-align" id="softBtn">
-            Software <i class="fa fa-caret-down"></i>
+            <span data-translate="nav-05">Software</span> <i class="fa fa-caret-down"></i>
         </a>
         <div id="soft_acc" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-show">
             <a href="/software/kevacoin_core.html" class="w3-bar-item w3-button">Kevacion Core</a>
@@ -57,7 +57,7 @@
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-    <div class="w3-bar-item w3-padding-24 w3-wide"><img src="/images/logo.png" height="30" /> Kevacoin Team</div>
+    <div class="w3-bar-item w3-padding-24 w3-wide"><img src="/images/logo.png" height="30" /> <span data-translate="nav-01">Kevacoin Team</span></div>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
             class="fa fa-bars"></i></a>
 </header>

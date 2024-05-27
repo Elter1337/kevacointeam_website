@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setupDropdown();
     });
     loadHTML('/footer.html', 'footer-placeholder');
-    // This can be triggered by a language selection event, e.g., user selecting a language from a dropdown
-    loadTranslations('en');
+    set_lang();
 });
 
 function setupDropdown() {
@@ -152,8 +151,20 @@ function loadTranslations(language) {
             });
             // Update the language button to show the current language
             updateLanguageButton(language);
+            // Save the selected language in localStorage
+            localStorage.setItem('selectedLanguage', language);
         })
         .catch(error => console.error('Error loading translation file:', error));
+};
+
+function set_lang() {
+    // Check if a language has been previously selected and saved
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    if (savedLanguage) {
+        loadTranslations(savedLanguage);
+    } else {
+        loadTranslations('en');
+    }
 };
 
 function updateLanguageButton(language) {

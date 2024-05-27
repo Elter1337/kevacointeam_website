@@ -171,5 +171,19 @@
     "software-keva-ipfs-01": "Kevacoin Team - Keva IPFS",
     "software-keva-ipfs-02": "Keva_IPFS",
     "software-keva-ipfs-03": "Download",
-    "software-keva-ipfs-04": "keva_ipfs is the back-end service for the Keva mobile app, designed to facilitate the upload and pinning of IPFS files. This back-end ensures seamless interaction between the Keva mobile app and the InterPlanetary File System (IPFS)."
+    "software-keva-ipfs-04": "keva_ipfs is the back-end service for the Keva mobile app, designed to facilitate the upload and pinning of IPFS files. This back-end ensures seamless interaction between the Keva mobile app and the InterPlanetary File System (IPFS).",
+    "foot-01": "Acerca de",
+    "foot-02": "Acerca de nosotros",
+    "foot-03": "Contacto",
+    "foot-04": "Soporte",
+    "foot-05": "Comunidad",
+    "foot-06": "Recursos",
+    "foot-07": "Documento técnico",
+    "foot-08": "Equipo Kevacoin",
+    "nav-01": "Equipo Kevacoin",
+    "nav-02": "Seleccionar idioma",
+    "nav-03": "Protocolo",
+    "nav-04": "Preguntas frecuentes",
+    "nav-05": "Software",
+    "nav-06": "Guías"
 }

@@ -171,5 +171,19 @@
     "software-keva-ipfs-01": "Kevacoin 团队 - Keva IPFS",
     "software-keva-ipfs-02": "Keva_IPFS",
     "software-keva-ipfs-03": "下载",
-    "software-keva-ipfs-04": "keva_ipfs 是 Keva 移动应用程序的后端服务，旨在促进 IPFS 文件的上传和固定。该后端确保 Keva 移动应用程序和 InterPlanetary 之间的无缝交互 文件系统 (IPFS)。"
+    "software-keva-ipfs-04": "keva_ipfs 是 Keva 移动应用程序的后端服务，旨在促进 IPFS 文件的上传和固定。该后端确保 Keva 移动应用程序和 InterPlanetary 之间的无缝交互 文件系统 (IPFS)。",
+    "foot-01": "关于",
+    "foot-02": "关于我们",
+    "foot-03": "联系我们",
+    "foot-04": "支持",
+    "foot-05": "社区",
+    "foot-06": "资源",
+    "foot-07": "白皮书",
+    "foot-08": "Kevacoin 团队",
+    "nav-01": "Kevacoin 团队",
+    "nav-02": "选择语言",
+    "nav-03": "协议",
+    "nav-04": "常见问题",
+    "nav-05": "软件",
+    "nav-06": "指南"
 }
