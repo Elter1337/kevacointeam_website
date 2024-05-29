@@ -2,6 +2,32 @@ h5 {
     word-wrap: break-word;
 }
 
+.code-block {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff !important;
+    background-color: #3f51b5 !important;
+}
+
+.code-block:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
 /* Style the images */
 .imgZoom {
     width: 10%;
