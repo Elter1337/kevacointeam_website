@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title data-translate="g2-01">Kevacoin Team - Build Keva_IPFS for Linux</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="/main.css">
+
+</head>
+
+<body class="w3-content" style="max-width:1800px">
+
+  <!-- Sidebar/menu -->
+  <div id="nav-placeholder">
+    <!-- nav will be loaded here -->
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+      <p class="w3-left"><b data-translate="g2-02">Build Keva_IPFS for Linux</b></p>
+    </header>
+
+    <!-- Product grid -->
+    <div class="w3-row w3-grayscale">
+      <div class="w3-col l12 s12">
+        <div class="w3-container">
+          <h4><b data-translate="g2-03">Step 1:</b></h4>
+          <img src="/guides/images/keva_ipfs/1.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/1a.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/1b.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/1c.png" class="imgZoom">
+          <p><span data-translate="g2-04">Make sure system is up to date</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt update</pre><br />
+          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt upgrade</pre>
+          </p>
+        </div>
+        <div class="w3-container">
+          <h4><b data-translate="g2-05">Step 2:</b></h4>
+          <img src="/guides/images/keva_ipfs/2.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/2a.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/2b.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/2c.png" class="imgZoom">
+          <p><span data-translate="g2-06">Install Git and Golang</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt install git golang</pre>
+          </p>
+        </div>
+        <h4><b data-translate="g2-07">Step 3:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/keva_ipfs/3.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/3a.png" class="imgZoom">
+          <p><span data-translate="g2-08">Clone keva_ipfs repository</span>
+          <pre onclick="copyToClipboard(this)"
+            class="code-block">git clone https://github.com/kevacoin-team/keva_ipfs.git</pre>
+          </p>
+        </div>
+        <h4><b data-translate="g2-09">Step 4:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/keva_ipfs/4.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/4a.png" class="imgZoom">
+          <p><span data-translate="g2-10">Navigate into keva_ipfs</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">cd keva_ipfs/</pre>
+          </p>
+        </div>
+        <h4><b data-translate="g2-11">Step 5:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/keva_ipfs/5.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/5a.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/5b.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/5c.png" class="imgZoom">
+          <p><span data-translate="g2-12">Make build directory and navigate to it</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">mkdir build</pre><br />
+          <pre onclick="copyToClipboard(this)" class="code-block">cd build/</pre>
+          </p>
+        </div>
+        <h4><b data-translate="g2-13">Step 6:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/keva_ipfs/6.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/6a.png" class="imgZoom">
+          <p><span data-translate="g2-14">Build keva_ipfs</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">go build ..</pre>
+          </p>
+        </div>
+        <h4><b data-translate="g2-15">Step 7:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/keva_ipfs/7.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/7a.png" class="imgZoom">
+          <p><span data-translate="g2-16">Copy config.json to build directory</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">cp ../config.json .</pre>
+          </p>
+        </div>
+        <h4><b data-translate="g2-17">Step 8:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/keva_ipfs/8.png" class="imgZoom">
+          <img src="/guides/images/keva_ipfs/8a.png" class="imgZoom">
+          <p><span data-translate="g2-18">Update config.json</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">nano config.json</pre>
+          </p>
+        </div>
+        <h4><b data-translate="g2-19">Step 9:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/keva_ipfs/9.png" class="imgZoom">
+          <p><span data-translate="g2-20">Launch keva_ipfs</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">./keva_ipfs</pre>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+      <img class="modal-content" id="img01">
+      <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+
+
+
+
+    <!-- End page content -->
+  </div>
+  <!-- Footer -->
+  <div id="footer-placeholder">
+    <!-- footer will be loaded here -->
+  </div>
+  <script src="../main.js" data-basepath="../"></script>
+</body>
+
+</html>

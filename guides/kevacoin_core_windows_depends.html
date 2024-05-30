@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+ data-translate="g6-0"
+<head>
+<title data-translate="g6-01">Kevacoin Team - Build Kevacoin Core for Windows</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/main.css">
+
+</head>
+<body class="w3-content" style="max-width:1800px">
+
+<!-- Sidebar/menu -->
+<div id="nav-placeholder">
+  <!-- nav will be loaded here -->
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left"><b data-translate="g6-02">Build Kevacoin Core for Windows</b></p>
+    <!-- <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p> -->
+  </header>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l12 s12">
+      <h4><b data-translate="g6-03">Step 1:</b></h4>
+      <div class="w3-container">
+        <img src="/guides/images/kevacoin_desktop_windows_depends/1.png" class="imgZoom">
+        <img src="/guides/images/kevacoin_desktop_windows_depends/1a.png" class="imgZoom">
+        <img src="/guides/images/kevacoin_desktop_windows_depends/1b.png" class="imgZoom">
+        <img src="/guides/images/kevacoin_desktop_windows_depends/1c.png" class="imgZoom">
+        <p><span data-translate="g6-04">Update system</span>
+        <pre onclick="copyToClipboard(this)" class="code-block">sudo apt update</pre><br />
+        <pre onclick="copyToClipboard(this)" class="code-block">sudo apt upgrade</pre></p>
+        </div>
+        <h4><b data-translate="g6-05">Step 2:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/2.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/2a.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/2b.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/2c.png" class="imgZoom">
+          <p><span data-translate="g6-06">Install build requirements</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl git cmake libsodium-dev</pre></p>
+        </div>
+        <h4><b data-translate="g6-07">Step 3:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/3.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/3a.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/3b.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/3c.png" class="imgZoom">
+          <p><span data-translate="g6-08">Install the mingw-w64 cross-compilation tool chain</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt install g++-mingw-w64-x86-64</pre></p>
+        </div>
+        <h4><b data-translate="g6-09">Step 4:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/4.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/4a.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/4b.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/4c.png" class="imgZoom">
+          <p><span data-translate="g6-10">Set the default mingw32 g++ compiler option to posix</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">sudo update-alternatives --config x86_64-w64-mingw32-g++</pre></p>
+        </div>
+        <h4><b data-translate="g6-11">Step 5:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/5.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/5a.png" class="imgZoom">
+          <p><span data-translate="g6-12">Clone kevacoin respository</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">git clone https://github.com/kevacoin-team/kevacoin.git</pre></p>
+        </div>
+        <h4><b data-translate="g6-13">Step 6:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/6.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/6a.png" class="imgZoom">
+          <p><span data-translate="g6-14">Navigate to the depends directory within kevacoin</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">cd kevacoin/depends/</pre></p>
+        </div>
+        <h4><b data-translate="g6-15">Step 7:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/7.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/7a.png" class="imgZoom">
+          <p><span data-translate="g6-16">Run make targeting Windows</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">make HOST=x86_64-w64-mingw32</pre></p>
+        </div>
+        <h4><b data-translate="g6-17">Step 8:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/8.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/8a.png" class="imgZoom">
+          <p><span data-translate="g6-18">Navigate up a directory</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">cd ..</pre></p>
+        </div>
+        <h4><b data-translate="g6-19">Step 9:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/9.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/9a.png" class="imgZoom">
+          <p><span data-translate="g6-20">Run autogen.sh</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">./autogen.sh</pre></p>
+        </div>
+        <h4><b data-translate="g6-21">Step 10:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/10.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/10a.png" class="imgZoom">
+          <p><span data-translate="g6-22">Run configure, targeting the Windows depends build</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">CONFIG_SITE=$(pwd)/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/</pre></p>
+        </div>
+        <h4><b data-translate="g6-23">Step 11:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/11.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/11a.png" class="imgZoom">
+          <p><span data-translate="g6-24">Build Kevacoin</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">make</pre></p>
+        </div>
+        <h4><b data-translate="g6-25">Step 12:</b></h4>
+        <div class="w3-container">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/12.png" class="imgZoom">
+          <img src="/guides/images/kevacoin_desktop_windows_depends/12a.png" class="imgZoom">
+          <p><span data-translate="g6-26">Build deployment package</span>
+          <pre onclick="copyToClipboard(this)" class="code-block">make deploy</pre></p>
+        </div>     
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+    <img class="modal-content" id="img01">
+    <span class="next" onclick="changeImage(1)">&#10095;</span>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder">
+    <!-- footer will be loaded here -->
+  </div>
+
+  
+
+  <!-- End page content -->
+</div>
+
+<script src="../main.js" data-basepath="../"></script>
+</body>
+</html>

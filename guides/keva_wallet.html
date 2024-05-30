@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/main.css">
+
+</head>
+<body class="w3-content" style="max-width:1800px">
+
+<!-- Sidebar/menu -->
+<div id="nav-placeholder">
+  <!-- nav will be loaded here -->
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Protocol</p>
+    <!-- <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p> -->
+  </header>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l12 s12">
+      <div class="w3-container">
+        <img src="/w3images/protocol.jpg" class="imgZoom">
+        <p>BUILD & RUN IT<br />
+          <br />
+          Please refer to the engines field in package.json file for the minimum required versions of Node and npm. It is preferred that you use an even-numbered version of Node as these are LTS versions.<br />
+          <br />
+          To view the version of Node and npm in your environment, run the following in your console:<br />
+          <br />
+          node --version && npm --version<br />
+          <br />
+              In your console:<br />
+              <br />
+          git clone https://github.com/kevacoin-project/keva_wallet.git<br />
+          cd keva_wallet<br />
+          npm install<br />
+          <br />
+          Please make sure that your console is running the most stable versions of npm and node (even-numbered versions).<br />
+          <br />
+              To run on Android:<br />
+              <br />
+          You will now need to either connect an Android device to your computer or run an emulated Android device using AVD Manager which comes shipped with Android Studio. To run an emulator using AVD Manager:<br />
+          <br />
+              Download and run Android Studio<br />
+              Click on "Open an existing Android Studio Project"<br />
+              Open build.gradle file under keva_wallet/android/ folder<br />
+              Android Studio will take some time to set things up. Once everything is set up, go to Tools -> AVD Manager<br />
+              Click on "Create Virtual Device..." and go through the steps to create a virtual device<br />
+              Launch your newly created virtual device by clicking the Play button under Actions column<br />
+              <br />
+          Once you connected an Android device or launched an emulator, run this:<br />
+          <br />
+          npx react-native run-android<br />
+          <br />
+          The above command will build the app and install it. Once you launch the app it will take some time for all of the dependencies to load. Once everything loads up, you should have the built app running.<br />
+          <br />
+              To run on iOS:<br />
+              <br />
+          cd ios<br />
+          pod install<br />
+          cd ..<br />
+          npm start ios
+          </p>
+      </div>
+      <div class="w3-container">
+        <img src="/w3images/protocol.jpg" style="width:0%">
+         <b> </b>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+    <img class="modal-content" id="img01">
+    <span class="next" onclick="changeImage(1)">&#10095;</span>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder">
+    <!-- footer will be loaded here -->
+  </div>
+
+  
+
+  <!-- End page content -->
+</div>
+
+<script src="../main.js" data-basepath="../"></script>
+</body>
+</html>

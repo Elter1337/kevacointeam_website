@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title data-translate="g4-01">Kevacoin Team - Setup Cryptonote-NodeJS-Pool</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="/main.css">
+
+</head>
+
+<body class="w3-content" style="max-width:1800px">
+
+  <!-- Sidebar/menu -->
+  <div id="nav-placeholder">
+    <!-- nav will be loaded here -->
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+      <p class="w3-left"><b data-translate="g4-02">Setup Cryptonote-NodeJS-Pool</b></p>
+      <!-- <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p> -->
+    </header>
+
+    <!-- Product grid -->
+    <div class="w3-row w3-grayscale">
+      <div class="w3-col l12 s12">
+        <div class="w3-container">
+          <h4><b data-translate="g4-03">Step 1:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/1.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/1a.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/1b.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/1c.png" class="imgZoom">
+            <p><span data-translate="g4-04">Update system</span></span>
+            <pre onclick="copyToClipboard(this)" class="code-block">sudo apt update</pre><br />
+            <pre onclick="copyToClipboard(this)" class="code-block">sudo apt upgrade</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-05">Step 2:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/2.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/2a.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/2b.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/2c.png" class="imgZoom">
+            <p><span data-translate="g4-06">Install build requirements</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">sudo apt-get install git redis python2 build-essential libssl-dev libboost-all-dev libsodium-dev curl</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-07">Step 3:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/3.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/3a.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/3b.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/3c.png" class="imgZoom">
+            <p><span data-translate="g4-08">Install nvm</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash</pre>
+            <br />
+            <pre onclick="copyToClipboard(this)" class="code-block">source ~/.bashrc</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-09">Step 4:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/4.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/4a.png" class="imgZoom">
+            <p><span data-translate="g4-10">Install NodeJs 11.0.0</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">nvm install v11.0.0</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-11">Step 5:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/5.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/5a.png" class="imgZoom">
+            <p><span data-translate="g4-12">Set npm to use python 2.7</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">npm config set python /usr/bin/python2.7</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-13">Step 6:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/6.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/6a.png" class="imgZoom">
+            <p><span data-translate="g4-14">Clone cryptonote-nodejs-pool repository</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">git clone https://github.com/kevacoin-team/cryptonote-nodejs-pool.git pool</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-15">Step 7:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/7.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/7a.png" class="imgZoom">
+            <p><span data-translate="g4-16">Navigate to pool</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cd pool/</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-17">Step 8:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/8.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/8a.png" class="imgZoom">
+            <p><span data-translate="g4-18">Run npm update</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">npm update</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-19">Step 9:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/9.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/9a.png" class="imgZoom">
+            <p><span data-translate="g4-20">Copy kevacoin.json to config.json</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cp ./config_examples/kevacoin.json config.json</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-21">Step 10:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/10.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/10a.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/10b.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/10c.png" class="imgZoom">
+            <img src="/guides/images/cryptonote_nodejs_pool/10d.png" class="imgZoom">
+            <p><span data-translate="g4-22">Update config.json</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">nano config.json</pre>
+            </p>
+          </div>
+          <h4><b data-translate="g4-23">Step 11:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/cryptonote_nodejs_pool/11.png" class="imgZoom">
+            <p><span data-translate="g4-24">Run pool</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">node init.js</pre>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+      <img class="modal-content" id="img01">
+      <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder">
+      <!-- footer will be loaded here -->
+    </div>
+
+
+
+    <!-- End page content -->
+  </div>
+
+  <script src="../main.js" data-basepath="../"></script>
+</body>
+
+</html>
