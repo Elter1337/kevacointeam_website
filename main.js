@@ -167,18 +167,26 @@ function set_lang() {
     }
 };
 
+function createLanguageMap() {
+    const languageDivs = document.querySelectorAll('#lang_acc > div');
+    const langMap = {};
+
+    languageDivs.forEach(div => {
+        // Extract the onclick attribute value
+        const onClickValue = div.getAttribute('onclick');
+        // Use a regular expression to match the language code within the 'loadTranslations()' call
+        const match = /loadTranslations\('(\w+)'\)/.exec(onClickValue);
+        // If a match is found and the div contains text, add it to the langMap
+        if (match && match[1] && div.textContent.trim()) {
+            langMap[match[1]] = div.textContent.trim();
+        }
+    });
+
+    return langMap;
+};
+
 function updateLanguageButton(language) {
-    const langMap = {
-        'en': 'English',
-        'es': 'Español',
-        'zh': '中文 (Zhōngwén)',
-        'ja': '日本語 (Japanese)',
-        'hi': 'हिन्दी (Hindi)',
-        'ar': 'العربية (Arabic)',
-        'bn': 'বাংলা (Bengali)',
-        'pt': 'Português',
-        'ru': 'Русский (Russian)'
-    };
+    const langMap = createLanguageMap();
     const languageButton = document.querySelector('#langBtn span');
     if (languageButton) {
         languageButton.textContent = langMap[language] || 'Select Language';

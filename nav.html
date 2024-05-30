@@ -16,15 +16,38 @@
         </div>
 
         <div id="lang_acc" onclick="lang_close()" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <div onclick="loadTranslations('en')"><i class="fas fa-globe-americas"></i> English</div>
-            <div onclick="loadTranslations('es')"><i class="fas fa-globe-americas"></i> Español</div>
-            <div onclick="loadTranslations('zh')"><i class="fas fa-globe-asia"></i> 中文 (Zhōngwén)</div>
-            <div onclick="loadTranslations('ja')"><i class="fas fa-globe-asia"></i> 日本語 (Japanese)</div>
-            <div onclick="loadTranslations('hi')"><i class="fas fa-globe-asia"></i> हिन्दी (Hindi)</div>
             <div onclick="loadTranslations('ar')"><i class="fas fa-globe-africa"></i> العربية (Arabic)</div>
             <div onclick="loadTranslations('bn')"><i class="fas fa-globe-asia"></i> বাংলা (Bengali)</div>
-            <div onclick="loadTranslations('pt')"><i class="fas fa-globe-europe"></i> Português</div>
+            <div onclick="loadTranslations('bs')"><i class="fas fa-globe-europe"></i> Bosanski (Bosnian)</div>
+            <div onclick="loadTranslations('bg')"><i class="fas fa-globe-europe"></i> Български (Bulgarian)</div>
+            <div onclick="loadTranslations('ca')"><i class="fas fa-globe-europe"></i> Català (Catalan)</div>
+            <div onclick="loadTranslations('ceb')"><i class="fas fa-globe-asia"></i> Cebuano</div>
+            <div onclick="loadTranslations('ny')"><i class="fas fa-globe-africa"></i> Chicheŵa (Chichewa)</div>
+            <div onclick="loadTranslations('zh-cn')"><i class="fas fa-globe-asia"></i> 简体中文 (Chinese Simplified)</div>
+            <div onclick="loadTranslations('hr')"><i class="fas fa-globe-europe"></i> Hrvatski (Croatian)</div>
+            <div onclick="loadTranslations('cs')"><i class="fas fa-globe-europe"></i> Čeština (Czech)</div>
+            <div onclick="loadTranslations('da')"><i class="fas fa-globe-europe"></i> Dansk (Danish)</div>
+            <div onclick="loadTranslations('nl')"><i class="fas fa-globe-europe"></i> Nederlands (Dutch)</div>
+            <div onclick="loadTranslations('en')"><i class="fas fa-globe-americas"></i> English</div>
+            <div onclick="loadTranslations('eo')"><i class="fas fa-globe-europe"></i> Esperanto</div>
+            <div onclick="loadTranslations('et')"><i class="fas fa-globe-europe"></i> Eesti (Estonian)</div>
+            <div onclick="loadTranslations('tl')"><i class="fas fa-globe-asia"></i> Filipino</div>
+            <div onclick="loadTranslations('fi')"><i class="fas fa-globe-europe"></i> Suomi (Finnish)</div>
+            <div onclick="loadTranslations('el')"><i class="fas fa-globe-europe"></i> Ελληνικά (Greek)</div>
+            <div onclick="loadTranslations('hi')"><i class="fas fa-globe-asia"></i> हिन्दी (Hindi)</div>
+            <div onclick="loadTranslations('hu')"><i class="fas fa-globe-europe"></i> Magyar (Hungarian)</div>
+            <div onclick="loadTranslations('id')"><i class="fas fa-globe-asia"></i> Bahasa Indonesia (Indonesian)</div>
+            <div onclick="loadTranslations('ja')"><i class="fas fa-globe-asia"></i> 日本語 (Japanese)</div>
+            <div onclick="loadTranslations('ko')"><i class="fas fa-globe-asia"></i> 한국어 (Korean)</div>
+            <div onclick="loadTranslations('pt')"><i class="fas fa-globe-europe"></i> Português (Portuguese)</div>
+            <div onclick="loadTranslations('ro')"><i class="fas fa-globe-europe"></i> Română (Romanian)</div>
             <div onclick="loadTranslations('ru')"><i class="fas fa-globe-europe"></i> Русский (Russian)</div>
+            <div onclick="loadTranslations('sk')"><i class="fas fa-globe-europe"></i> Slovenčina (Slovak)</div>
+            <div onclick="loadTranslations('sv')"><i class="fas fa-globe-europe"></i> Svenska (Swedish)</div>
+            <div onclick="loadTranslations('th')"><i class="fas fa-globe-asia"></i> ไทย (Thai)</div>
+            <div onclick="loadTranslations('tr')"><i class="fas fa-globe-europe"></i> Türkçe (Turkish)</div>
+            <div onclick="loadTranslations('uk')"><i class="fas fa-globe-europe"></i> Українська (Ukrainian)</div>
+            <div onclick="loadTranslations('vi')"><i class="fas fa-globe-asia"></i> Tiếng Việt (Vietnamese)</div>
         </div>
 
         <a data-translate="nav-03" href="/protocol.html" class="w3-bar-item w3-button">Protocol</a>
@@ -41,25 +64,27 @@
             <a href="/software/keva_wallet.html" class="w3-bar-item w3-button">KevaWallet</a>
             <a href="/software/cryptonode_nodejs_pool.html" class="w3-bar-item w3-button">Cryptonote-Nodejs-Pool</a>
         </div>
-        <a onclick="accordian_func('guides_acc')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="guidesBtn">
-            Guides <i class="fa fa-caret-down"></i>
+        <a onclick="accordian_func('guides_acc')" href="javascript:void(0)"
+            class="w3-button w3-block w3-white w3-left-align" id="guidesBtn">
+            <span data-translate="nav-06">Guides</span> <i class="fa fa-caret-down"></i>
         </a>
         <div id="guides_acc" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-show">
-            <a href="/guides/kevacoin_core_linux_depends.html" class="w3-bar-item w3-button">Build Kevacion Core for Linux using depends</a>
-            <a href="/guides/kevacoin_core_windows_depends.html" class="w3-bar-item w3-button">Build Kevacion Core for Windows using depends</a>
-            <a href="/guides/keva_stratum.html" class="w3-bar-item w3-button">Build Keva-Stratum for Linux</a>
-            <a href="/guides/keva_stratum_win64_msys2.html" class="w3-bar-item w3-button">Build Keva-Stratum for Windows using MSYS</a>
-            <a href="/guides/keva_ipfs.html" class="w3-bar-item w3-button">Build Keva_IPFS for Linux</a>
-            <a href="/guides/cryptonode_nodejs_pool.html" class="w3-bar-item w3-button">Cryptonote-Nodejs-Pool</a>
-        <!-- <a href="/guides/electrumx.html" class="w3-bar-item w3-button">ElectrumX</a> -->
-        <!-- <a href="/guides/keva_wallet.html" class="w3-bar-item w3-button">KevaWallet</a> -->
+            <a data-translate="nav-07" href="/guides/kevacoin_core_linux_depends.html" class="w3-bar-item w3-button">Build Kevacion Core for Linux using depends</a>
+            <a data-translate="nav-08" href="/guides/kevacoin_core_windows_depends.html" class="w3-bar-item w3-button">Build Kevacion Core for Windows using depends</a>
+            <a data-translate="nav-09" href="/guides/keva_stratum.html" class="w3-bar-item w3-button">Build Keva-Stratum for Linux</a>
+            <a data-translate="nav-10" href="/guides/keva_stratum_win64_msys2.html" class="w3-bar-item w3-button">Build Keva-Stratum for Windows using MSYS</a>
+            <a data-translate="nav-11" href="/guides/keva_ipfs.html" class="w3-bar-item w3-button">Build Keva_IPFS for Linux</a>
+            <a data-translate="nav-12" href="/guides/cryptonode_nodejs_pool.html" class="w3-bar-item w3-button">Cryptonote-Nodejs-Pool</a>
+            <!-- <a href="/guides/electrumx.html" class="w3-bar-item w3-button">ElectrumX</a> -->
+            <!-- <a href="/guides/keva_wallet.html" class="w3-bar-item w3-button">KevaWallet</a> -->
         </div>
     </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-    <div class="w3-bar-item w3-padding-24 w3-wide"><img src="/images/logo.png" height="30" /> <span data-translate="nav-01">Kevacoin Team</span></div>
+    <div class="w3-bar-item w3-padding-24 w3-wide"><img src="/images/logo.png" height="30" /> <span
+            data-translate="nav-01">Kevacoin Team</span></div>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
             class="fa fa-bars"></i></a>
 </header>
