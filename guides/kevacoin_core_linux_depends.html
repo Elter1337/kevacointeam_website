@@ -1,141 +1,177 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title data-translate="g5-01">Kevacoin Team - Build Kevacoin Core for Linux</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="/main.css">
 
+<head>
+  <title data-translate="g5-01">Kevacoin Team - Build Kevacoin Core for Linux</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="/main.css">
 </head>
+
 <body class="w3-content" style="max-width:1800px">
 
-<!-- Sidebar/menu -->
-<div id="nav-placeholder">
-  <!-- nav will be loaded here -->
-</div>
+  <!-- Sidebar/menu -->
+  <div id="nav-placeholder">
+    <!-- nav will be loaded here -->
+  </div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
 
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left"><b data-translate="g5-02">Build Kevacoin Core for Linux</b></p>
-    <!-- <p class="w3-right">
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-    </p> -->
-  </header>
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
 
-  <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
-    <div class="w3-col l12 s12">
-      <h4><b data-translate="g5-03">Step 1:</b></h4>
-      <div class="w3-container">
-        <img src="/guides/images/kevacoin_desktop_linux_depends/1.png" class="imgZoom">
-        <img src="/guides/images/kevacoin_desktop_linux_depends/1a.png" class="imgZoom">
-        <img src="/guides/images/kevacoin_desktop_linux_depends/1b.png" class="imgZoom">
-        <img src="/guides/images/kevacoin_desktop_linux_depends/1c.png" class="imgZoom">
-        <p><span data-translate="g5-04">Update system</span>
-        <pre onclick="copyToClipboard(this)" class="code-block">sudo apt update</pre><br />
-        <pre onclick="copyToClipboard(this)" class="code-block">sudo apt upgrade</pre></p>
-        </div>
-        <h4><b data-translate="g5-05">Step 2:</b></h4>
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+      <p class="w3-left"><b data-translate="g5-02">Build Kevacoin Core for Linux</b></p>
+    </header>
+
+    <!-- Product grid -->
+    <div class="w3-row w3-grayscale">
+      <div class="w3-col l12 s12">
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/2.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/2a.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/2b.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/2c.png" class="imgZoom">
-          <p><span data-translate="g5-06">Install build requirements</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 cmake libsodium-dev git curl</pre></p>
+          <p data-translate="g5-25">
+          </p>
         </div>
-        <h4><b data-translate="g5-07">Step 3:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/3.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/3a.png" class="imgZoom">
-          <p><span data-translate="g5-08">Clone kevacoin respository</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">git clone https://github.com/kevacoin-team/kevacoin.git</pre></p>
+          <h4><b data-translate="g5-03">Step 1:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/1.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/1a.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/1b.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/1c.png" class="imgZoom">
+            <p><span data-translate="g5-04">Update system</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">sudo apt update</pre><br />
+            <pre onclick="copyToClipboard(this)" class="code-block">sudo apt upgrade</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g5-09">Step 4:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/4.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/4a.png" class="imgZoom">
-          <p><span data-translate="g5-10">Navigate to the depends directory within kevacoin</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">cd kevacoin/depends/</pre></p>
+          <h4><b data-translate="g5-05">Step 2:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/2.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/2a.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/2b.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/2c.png" class="imgZoom">
+            <p><span data-translate="g5-06">Install build requirements</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 cmake libsodium-dev git curl</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g5-11">Step 5:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/5.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/5a.png" class="imgZoom">
-          <p><span data-translate="g5-12">Run make targeting Linux</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">make HOST=x86_64-pc-linux-gnu</pre></p>
+          <h4><b data-translate="g5-07">Step 3:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/3.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/3a.png" class="imgZoom">
+            <p><span data-translate="g5-08">Clone kevacoin respository</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">git clone https://github.com/kevacoin-team/kevacoin.git</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g5-13">Step 6:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/6.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/6a.png" class="imgZoom">
-          <p><span data-translate="g5-14">Navigate up a directory</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">cd ..</pre></p>
+          <h4><b data-translate="g5-09">Step 4:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/4.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/4a.png" class="imgZoom">
+            <p><span data-translate="g5-10">Navigate to the depends directory within kevacoin</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cd kevacoin/depends/</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g5-15">Step 7:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/7.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/7a.png" class="imgZoom">
-          <p><span data-translate="g5-16">Run autogen.sh</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">./autogen.sh</pre></p>
+          <h4><b data-translate="g5-11">Step 5:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/5.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/5a.png" class="imgZoom">
+            <p><span data-translate="g5-12">Run make targeting Linux</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">make HOST=x86_64-pc-linux-gnu</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g5-17">Step 8:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/8.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/8a.png" class="imgZoom">
-          <p><span data-translate="g5-18">Run configure, targeting the Linux depends build</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">CONFIG_SITE=$(pwd)/depends/x86_64-pc-linux-gnu/share/config.site ./configure --prefix=/</pre></p>
+          <h4><b data-translate="g5-13">Step 6:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/6.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/6a.png" class="imgZoom">
+            <p><span data-translate="g5-14">Navigate up a directory</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cd ..</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g5-19">Step 9:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/9.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/9a.png" class="imgZoom">
-          <p><span data-translate="g5-20">Build Kevacoin</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">make</pre></p>
+          <h4><b data-translate="g5-15">Step 7:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/7.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/7a.png" class="imgZoom">
+            <p><span data-translate="g5-16">Run autogen.sh</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">./autogen.sh</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g5-21">Step 10:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/10.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/10a.png" class="imgZoom">
-          <p><span data-translate="g5-22">Build deployment package</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">make deploy</pre></p>
+          <h4><b data-translate="g5-17">Step 8:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/8.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/8a.png" class="imgZoom">
+            <p><span data-translate="g5-18">Run configure, targeting the Linux depends build</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">CONFIG_SITE=$(pwd)/depends/x86_64-pc-linux-gnu/share/config.site ./configure --prefix=/</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g5-23">Step 11:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/11.png" class="imgZoom">
-          <img src="/guides/images/kevacoin_desktop_linux_depends/11a.png" class="imgZoom">
-          <p><span data-translate="g5-24">Install built Kevacoin</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">sudo make install</pre></p>
-        </div>          
+          <h4><b data-translate="g5-19">Step 9:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/9.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/9a.png" class="imgZoom">
+            <p><span data-translate="g5-20">Build Kevacoin</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">make</pre>
+            </p>
+          </div>
+        </div>
+        <div class="w3-container">
+          <h4><b data-translate="g5-21">Step 10:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/10.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/10a.png" class="imgZoom">
+            <p><span data-translate="g5-22">Build deployment package</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">make deploy</pre>
+            </p>
+          </div>
+        </div>
+        <div class="w3-container">
+          <h4><b data-translate="g5-23">Step 11:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/11.png" class="imgZoom">
+            <img src="/guides/images/kevacoin_desktop_linux_depends/11a.png" class="imgZoom">
+            <p><span data-translate="g5-24">Install built Kevacoin</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">sudo make install</pre>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+      <img class="modal-content" id="img01">
+      <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder">
+      <!-- footer will be loaded here -->
+    </div>
+
+    <!-- End page content -->
   </div>
 
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="prev" onclick="changeImage(-1)">&#10094;</span>
-    <img class="modal-content" id="img01">
-    <span class="next" onclick="changeImage(1)">&#10095;</span>
-  </div>
-
-  <!-- Footer -->
-  <div id="footer-placeholder">
-    <!-- footer will be loaded here -->
-  </div>
-
-  
-
-  <!-- End page content -->
-</div>
-
-<script src="../main.js" data-basepath="../"></script>
+  <script src="../main.js" data-basepath="../"></script>
 </body>
+
 </html>

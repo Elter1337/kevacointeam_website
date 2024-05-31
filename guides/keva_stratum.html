@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title  data-translate="g3-01">Kevacoin Team - Build Keva Stratum for Linux</title>
+  <title data-translate="g3-01">Kevacoin Team - Build Keva Stratum for Linux</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="/main.css">
-
 </head>
 
 <body style="max-width:1800px">
@@ -35,100 +35,140 @@
     <!-- Product grid -->
     <div class="w3-row w3-grayscale">
       <div class="w3-col l12 s12">
-
-        <h4><b data-translate="g3-03">Step 1:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/1.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/1a.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/1b.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/1c.png" class="imgZoom">
-          <p><span data-translate="g3-04">Update system</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt update</pre><br />
-          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt upgrade</pre></p>
+          <p data-translate="g3-27">
+          </p>
         </div>
-        <h4><b data-translate="g3-05">Step 2:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/2.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/2a.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/2b.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/2c.png" class="imgZoom">
-          <p><span data-translate="g3-06">Install build requirements</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 cmake libsodium-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev</pre></p>
+          <h4><b data-translate="g3-03">Step 1:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/1.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/1a.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/1b.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/1c.png" class="imgZoom">
+            <p><span data-translate="g3-04">Update system</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">sudo apt update</pre><br />
+            <pre onclick="copyToClipboard(this)" class="code-block">sudo apt upgrade</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-07">Step 3:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/3.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/3a.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/3b.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/3c.png" class="imgZoom">
-          <p><span data-translate="g3-08">Install Golang and Git</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">sudo apt-get install golang git</pre></p>
+          <h4><b data-translate="g3-05">Step 2:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/2.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/2a.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/2b.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/2c.png" class="imgZoom">
+            <p><span data-translate="g3-06">Install build requirements</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 cmake libsodium-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-09">Step 4:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/4.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/4a.png" class="imgZoom">
-          <p><span data-translate="g3-10">Clone keva-stratum</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">git clone https://github.com/kevaone/keva-stratum.git</pre></p>
+          <h4><b data-translate="g3-07">Step 3:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/3.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/3a.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/3b.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/3c.png" class="imgZoom">
+            <p><span data-translate="g3-08">Install Golang and Git</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">sudo apt-get install golang git</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-11">Step 5:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/5.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/5a.png" class="imgZoom">
-          <p><span data-translate="g3-12">Enter keva-stratum directory</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">cd keva-stratum/</pre></p>
+          <h4><b data-translate="g3-09">Step 4:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/4.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/4a.png" class="imgZoom">
+            <p><span data-translate="g3-10">Clone keva-stratum</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">git clone https://github.com/kevaone/keva-stratum.git</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-13">Step 6:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/6.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/6a.png" class="imgZoom">
-          <p><span data-translate="g3-14">Make build directory</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">mkdir build</pre></p>
+          <h4><b data-translate="g3-11">Step 5:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/5.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/5a.png" class="imgZoom">
+            <p><span data-translate="g3-12">Enter keva-stratum directory</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cd keva-stratum/</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-15">Step 7:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/7.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/7a.png" class="imgZoom">
-          <p><span data-translate="g3-16">Navigate to build directory</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">cd build/</pre></p>
+          <h4><b data-translate="g3-13">Step 6:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/6.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/6a.png" class="imgZoom">
+            <p><span data-translate="g3-14">Make build directory</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">mkdir build</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-17">Step 8:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/8.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/8a.png" class="imgZoom">
-          <p><span data-translate="g3-18">Export GO111MODULE to auto for build compatibility</span>
-          <pre onclick="copyToClipboard(this)"
-            class="code-block">export GO111MODULE=auto</pre></p>
+          <h4><b data-translate="g3-15">Step 7:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/7.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/7a.png" class="imgZoom">
+            <p><span data-translate="g3-16">Navigate to build directory</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cd build/</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-19">Step 9:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/9.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/9a.png" class="imgZoom">
-          <p><span data-translate="g3-20">Configure make</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">cmake ..</pre></p>
+          <h4><b data-translate="g3-17">Step 8:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/8.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/8a.png" class="imgZoom">
+            <p><span data-translate="g3-18">Export GO111MODULE to auto for build compatibility</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">export GO111MODULE=auto</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-21">Step 10:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/10.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/10a.png" class="imgZoom">
-          <p><span data-translate="g3-22">Build keva-stratum</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">make</pre></p>
+          <h4><b data-translate="g3-19">Step 9:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/9.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/9a.png" class="imgZoom">
+            <p><span data-translate="g3-20">Configure make</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cmake ..</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-23">Step 11:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/11.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/11a.png" class="imgZoom">
-          <p><span data-translate="g3-24">Check build outputs present</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">ls -l</pre></p>
+          <h4><b data-translate="g3-21">Step 10:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/10.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/10a.png" class="imgZoom">
+            <p><span data-translate="g3-22">Build keva-stratum</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">make</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g3-25">Step 12:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_linux/12.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/12a.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/12b.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_linux/12c.png" class="imgZoom">
-          <p><span data-translate="g3-26">Update config.json</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">nano config.json</pre></p>
+          <h4><b data-translate="g3-23">Step 11:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/11.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/11a.png" class="imgZoom">
+            <p><span data-translate="g3-24">Check build outputs present</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">ls -l</pre>
+            </p>
+          </div>
+        </div>
+        <div class="w3-container">
+          <h4><b data-translate="g3-25">Step 12:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_linux/12.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/12a.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/12b.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_linux/12c.png" class="imgZoom">
+            <p><span data-translate="g3-26">Update config.json</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">nano config.json</pre>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -144,8 +184,6 @@
     <div id="footer-placeholder">
       <!-- footer will be loaded here -->
     </div>
-
-
 
     <!-- End page content -->
   </div>

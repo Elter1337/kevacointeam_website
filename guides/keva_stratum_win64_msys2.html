@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title data-translate="g1-01">Kevacoin Team - Build Keva Stratum for Windows using MSYS2</title>
   <meta charset="UTF-8">
@@ -7,7 +8,6 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="/main.css">
-
 </head>
 
 <body class="w3-content" style="max-width:1800px">
@@ -35,199 +35,246 @@
     <!-- Product grid -->
     <div class="w3-row w3-grayscale">
       <div class="w3-col l12 s12">
-        <h4><b data-translate="g1-03">Step 1:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/1.png" class="imgZoom">
-          <p><span data-translate="g1-04" data-translate="g1-0">Download MSYS2 installer from
-              https://www.msys2.org/:</span> <a
-              href="https://github.com/msys2/msys2-installer/releases/download/2024-05-07/msys2-x86_64-20240507.exe"
-              target="_blank"><span data-translate="g1-05">Download</span></a>
-          <pre onclick="copyToClipboard(this)"
-            class="code-block">https://github.com/msys2/msys2-installer/releases/download/2024-05-07/msys2-x86_64-20240507.exe</pre>
+          <p data-translate="g1-48">
           </p>
         </div>
-        <h4><b data-translate="g1-06">Step 2:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/2.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/2a.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/2b.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/2c.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/2d.png" class="imgZoom">
-          <p><span data-translate="g1-07" data-translate="g1-0">Install MSYS2 from downloaded installer, skip option to
-              run at the end so correct shell can be launched.</span>
-          </p>
+          <h4><b data-translate="g1-03">Step 1:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/1.png" class="imgZoom">
+            <p><span data-translate="g1-04" data-translate="g1-0">Download MSYS2 installer from
+                https://www.msys2.org/:</span> <a
+                href="https://github.com/msys2/msys2-installer/releases/download/2024-05-07/msys2-x86_64-20240507.exe"
+                target="_blank"><span data-translate="g1-05">Download</span></a>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">https://github.com/msys2/msys2-installer/releases/download/2024-05-07/msys2-x86_64-20240507.exe</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-08">Step 3:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/3.png" class="imgZoom">
-          <p><span data-translate="g1-09" data-translate="g1-0">Launch mingw64 either from start menu or from command
-              line with 'mingw64'</span>
-          </p>
+          <h4><b data-translate="g1-06">Step 2:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/2.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/2a.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/2b.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/2c.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/2d.png" class="imgZoom">
+            <p><span data-translate="g1-07" data-translate="g1-0">Install MSYS2 from downloaded installer, skip option
+                to
+                run at the end so correct shell can be launched.</span>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-10">Step 4:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/4.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/4a.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/4b.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/4c.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/4d.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/4e.png" class="imgZoom">
-          <p><span data-translate="g1-11" data-translate="g1-0">Update system, relaunching mingw64 may be
-              required</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">pacman -Syu</pre>
-          </p>
+          <h4><b data-translate="g1-08">Step 3:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/3.png" class="imgZoom">
+            <p><span data-translate="g1-09" data-translate="g1-0">Launch mingw64 either from start menu or from command
+                line with 'mingw64'</span>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-12">Step 5:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/5.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/5a.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/5b.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/5c.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/5d.png" class="imgZoom">
-          <p><span data-translate="g1-13">Install build requirements</span>
-          <pre onclick="copyToClipboard(this)"
-            class="code-block">pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-hidapi git unzip</pre>
-          </p>
+          <h4><b data-translate="g1-10">Step 4:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/4.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/4a.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/4b.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/4c.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/4d.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/4e.png" class="imgZoom">
+            <p><span data-translate="g1-11" data-translate="g1-0">Update system, relaunching mingw64 may be
+                required</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">pacman -Syu</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-14">Step 6:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/6.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/6a.png" class="imgZoom">
-          <p><span data-translate="g1-15">For build support we need to use an
-              older version of go. Here we use latest known to build the project 1.19.13</span>
-          <pre onclick="copyToClipboard(this)"
-            class="code-block">wget https://go.dev/dl/go1.19.13.windows-amd64.zip</pre>
-          </p>
+          <h4><b data-translate="g1-12">Step 5:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/5.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/5a.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/5b.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/5c.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/5d.png" class="imgZoom">
+            <p><span data-translate="g1-13">Install build requirements</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-hidapi git unzip</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-16">Step 7:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/7.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/7a.png" class="imgZoom">
-          <p><span data-translate="g1-17">Create a directory to install Go</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">mkdir /c/Go-1.19.13</pre>
-          </p>
+          <h4><b data-translate="g1-14">Step 6:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/6.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/6a.png" class="imgZoom">
+            <p><span data-translate="g1-15">For build support we need to use an
+                older version of go. Here we use latest known to build the project 1.19.13</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">wget https://go.dev/dl/go1.19.13.windows-amd64.zip</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-18">Step 8:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/8.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/8a.png" class="imgZoom">
-          <p><span data-translate="g1-19">Unzip go into the Go install directory</span>
-          <pre onclick="copyToClipboard(this)"
-            class="code-block">unzip go1.19.13.windows-amd64.zip -d /c/Go-1.19.13</pre>
-          </p>
+          <h4><b data-translate="g1-16">Step 7:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/7.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/7a.png" class="imgZoom">
+            <p><span data-translate="g1-17">Create a directory to install Go</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">mkdir /c/Go-1.19.13</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-20">Step 9:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/9.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/9a.png" class="imgZoom">
-          <p><span data-translate="g1-21">Export the GOROOT environtment vairiable
-              to point to the Go install directory</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">export GOROOT=/c/Go-1.19.13/go</pre>
-          </p>
+          <h4><b data-translate="g1-18">Step 8:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/8.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/8a.png" class="imgZoom">
+            <p><span data-translate="g1-19">Unzip go into the Go install directory</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">unzip go1.19.13.windows-amd64.zip -d /c/Go-1.19.13</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-22">Step 10:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/10.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/10a.png" class="imgZoom">
-          <p><span data-translate="g1-23">Update the PATH environment variable</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">export PATH=$GOROOT/bin:$PATH</pre>
-          </p>
+          <h4><b data-translate="g1-20">Step 9:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/9.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/9a.png" class="imgZoom">
+            <p><span data-translate="g1-21">Export the GOROOT environtment vairiable
+                to point to the Go install directory</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">export GOROOT=/c/Go-1.19.13/go</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-24">Step 11:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/11.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/11a.png" class="imgZoom">
-          <p><span data-translate="g1-25">Check that our go version matches</span><span
-              data-translate="g1-26">1.19.13</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">go version</pre>
-          </p>
+          <h4><b data-translate="g1-22">Step 10:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/10.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/10a.png" class="imgZoom">
+            <p><span data-translate="g1-23">Update the PATH environment variable</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">export PATH=$GOROOT/bin:$PATH</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-27">Step 12:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/12.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/12a.png" class="imgZoom">
-          <p><span data-translate="g1-28">Set GO111MODULE to 'auto' for build
-              compatibility</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">export GO111MODULE=auto</pre>
-          </p>
+          <h4><b data-translate="g1-24">Step 11:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/11.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/11a.png" class="imgZoom">
+            <p><span data-translate="g1-25">Check that our go version matches</span><span
+                data-translate="g1-26">1.19.13</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">go version</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-29">Step 13:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/13.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/13a.png" class="imgZoom">
-          <p><span data-translate="g1-30">Clone keva-stratum repository</span>
-          <pre onclick="copyToClipboard(this)"
-            class="code-block">git clone https://github.com/kevaone/keva-stratum.git</pre>
-          </p>
+          <h4><b data-translate="g1-27">Step 12:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/12.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/12a.png" class="imgZoom">
+            <p><span data-translate="g1-28">Set GO111MODULE to 'auto' for build
+                compatibility</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">export GO111MODULE=auto</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-31">Step 14:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/14.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/14a.png" class="imgZoom">
-          <p><span data-translate="g1-32">Navigate into keva-stratum directory</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">cd keva-stratum</pre>
-          </p>
+          <h4><b data-translate="g1-29">Step 13:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/13.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/13a.png" class="imgZoom">
+            <p><span data-translate="g1-30">Clone keva-stratum repository</span>
+            <pre onclick="copyToClipboard(this)"
+              class="code-block">git clone https://github.com/kevaone/keva-stratum.git</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-33">Step 15:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/15.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/15a.png" class="imgZoom">
-          <p><span data-translate="g1-34">Make a directory to build from, here we
-              use build</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">mkdir build</pre>
-          </p>
+          <h4><b data-translate="g1-31">Step 14:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/14.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/14a.png" class="imgZoom">
+            <p><span data-translate="g1-32">Navigate into keva-stratum directory</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cd keva-stratum</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-35">Step 16:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/16.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/16a.png" class="imgZoom">
-          <p><span data-translate="g1-36">Navigate into the build directory</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">cd build</pre>
-          </p>
+          <h4><b data-translate="g1-33">Step 15:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/15.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/15a.png" class="imgZoom">
+            <p><span data-translate="g1-34">Make a directory to build from, here we
+                use build</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">mkdir build</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-37">Step 17:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/17.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/17a.png" class="imgZoom">
-          <p><span data-translate="g1-38">Run cmake with the MSYS tool chain</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">cmake -G "MSYS Makefiles" ..</pre>
-          </p>
+          <h4><b data-translate="g1-35">Step 16:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/16.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/16a.png" class="imgZoom">
+            <p><span data-translate="g1-36">Navigate into the build directory</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cd build</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-39">Step 18:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/18.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/18a.png" class="imgZoom">
-          <p><span data-translate="g1-40">Build keva-stratum</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">make</pre>
-          </p>
+          <h4><b data-translate="g1-37">Step 17:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/17.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/17a.png" class="imgZoom">
+            <p><span data-translate="g1-38">Run cmake with the MSYS tool chain</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">cmake -G "MSYS Makefiles" ..</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-41">Step 19:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/19.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/19a.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/19b.png" class="imgZoom">
-          <p><span data-translate="g1-42">Update keva-stratum config</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">nano config.json</pre>
-          </p>
+          <h4><b data-translate="g1-39">Step 18:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/18.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/18a.png" class="imgZoom">
+            <p><span data-translate="g1-40">Build keva-stratum</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">make</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-43">Step 20:</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/20.png" class="imgZoom">
-          <img src="/guides/images/keva_stratum_win64_msys2/20a.png" class="imgZoom">
-          <p><span data-translate="g1-44">Run keva-stratum</span>
-          <pre onclick="copyToClipboard(this)" class="code-block">keva-stratum.exe</pre>
-          </p>
+          <h4><b data-translate="g1-41">Step 19:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/19.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/19a.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/19b.png" class="imgZoom">
+            <p><span data-translate="g1-42">Update keva-stratum config</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">nano config.json</pre>
+            </p>
+          </div>
         </div>
-        <h4><b data-translate="g1-45">Build file located within c:/msys2/home/'user'/keva-stratum/build. If moving to
-            another location you need
-            kevastratum.exe, libcnutil.dll, config.json and www directory.</b></h4>
         <div class="w3-container">
-          <img src="/guides/images/keva_stratum_win64_msys2/21.png" class="imgZoom"><span
-            data-translate="g1-46">Listing</span>
-          <p></p>
-          <img src="/guides/images/keva_stratum_win64_msys2/21a.png" class="imgZoom"><span
-            data-translate="g1-47">Explorer</span>
-          <p></p>
+          <h4><b data-translate="g1-43">Step 20:</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/20.png" class="imgZoom">
+            <img src="/guides/images/keva_stratum_win64_msys2/20a.png" class="imgZoom">
+            <p><span data-translate="g1-44">Run keva-stratum</span>
+            <pre onclick="copyToClipboard(this)" class="code-block">keva-stratum.exe</pre>
+            </p>
+          </div>
+        </div>
+        <div class="w3-container">
+          <h4><b data-translate="g1-45">Build file located within c:/msys2/home/'user'/keva-stratum/build. If moving to
+              another location you need
+              kevastratum.exe, libcnutil.dll, config.json and www directory.</b></h4>
+          <div class="w3-container">
+            <img src="/guides/images/keva_stratum_win64_msys2/21.png" class="imgZoom"><span
+              data-translate="g1-46">Listing</span>
+            <p></p>
+            <img src="/guides/images/keva_stratum_win64_msys2/21a.png" class="imgZoom"><span
+              data-translate="g1-47">Explorer</span>
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
@@ -243,8 +290,6 @@
     <div id="footer-placeholder">
       <!-- footer will be loaded here -->
     </div>
-
-
 
     <!-- End page content -->
   </div>
